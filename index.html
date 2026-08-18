@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstARTMSgram</title>
+    <link rel="icon" href="./images/artms.webp" type="image/png">
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body>
+    <div class="custom-cursor" style="background-image: url('./images/crossbow.gif');"></div>
+    <header class="header">
+        <img 
+        class="header__image"
+        src="./images/artms.png" 
+        alt="ARTMS logo">
+    <nav class="nav">
+        <ul class="nav__links"><li class="nav__login">Iniciar sesión</li></ul>
+    </nav>
+    </header>
+    <main class="main">
+        <section class="top">
+            <div class="top__container">
+                <div class="top__left">
+                    <div class="story-border" id="storyButton">
+                    <img src="./images/portait.jpg" alt="Logo de la banda ARTMS" class="top__image">
+                    </div>
+                    <div class="story-modal" id="storyModal">
+                        <div class="story-content">
+                            <div class="story-progress-container" id="storyProgressContainer"></div>
+                    <div class="story-header">
+                        <span class="story-title" id="storyTitle"></span>
+                        <button class="story-close" id="storyClose" aria-label="Cerrar">&times;</button>
+                    </div>
+                        <button class="story-volume" id="storyVolume" aria-label="Activar sonido">🔇</button>
+                        <video id="storyVideo" autoplay playsinline muted></video>
+                        <button class="story-navigation story-prev" id="storyPrev" aria-label="Story anterior">‹</button>
+                        <button class="story-navigation story-next" id="storyNext" aria-label="Siguiente Story">›</button>
+                        <button class="story-like" id="storyLike" aria-label="Me gusta">
+                        <span id="likeIcon">♡</span></button></div></div>
+                    </div>
+                <div class="top__middle">
+                    <div class="top__user-info">
+                        <div class="top__user-name" id="top__user-name">
+                            <h1>official_artms</h1></div>
+                        <div class="top__user-description" id="top__user-description">Official ARTMS</div>
+                        <br>
+                        <button type="button" id="user-info__edit" class="user-info__button">Editar Usuario</button>
+                    </div>
+                </div>
+                <div class="top__right">
+                    <button type="button" id="user-info__add-card" class="user-info__button">Agregar post</button>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="container"></div>
+        </section>
+        <div class="popup" id="popup__edit">
+            <div class="popup__container">
+                <div class="popup__title"><h1>Ingrese los datos</h1></div>
+                    <button type="button" id="popup__close-edit" class="popup__close"> x </button>
+                    <div class="popup__content">
+                        <form action="" class="form" id="form__edit">
+                        <label for="form__username">Username</label>
+                        <input type="text" class="form__username" name="username" id="form__username">
+                        <label for="form__userDescription">Description</label>
+                        <input type="text" class="form__userDescription" name="description" id="form__userDescription">
+                        <br>
+                        <button type="submit" class="form__button">Save</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+        <div class="popup popup__card-viewer" id="popup__card-viewer" aria-hidden="true">
+            <div class="popup__card-container" role="dialog" aria-modal="true" aria-label="Vista del post">
+                <button type="button" id="popup__card-close" class="popup__close" aria-label="Cerrar">×</button>
+                <button type="button" id="popup__card-prev" class="popup__card-arrow popup__card-arrow--prev" aria-label="Tarjeta anterior">‹</button>
+
+                <div class="popup__card-image-container">
+                    <img id="popup__card-image" class="popup__card-image" src="" alt="">
+                </div>
+
+                <div class="popup__card-info">
+                    <h2 id="popup__card-title"></h2>
+                    <p id="popup__card-description"></p>
+                    <span id="popup__card-counter" class="popup__card-counter"></span>
+                </div>
+
+                <button type="button" id="popup__card-next" class="popup__card-arrow popup__card-arrow--next" aria-label="Tarjeta siguiente">›</button>
+            </div>
+        </div>
+        <div class="popup" id="popup__add-card">
+            <div class="popup__container">
+                <div class="popup__title"><h1>Crear post</h1></div>
+                    <button type="button" id="popup__close-add-card" class="popup__close"> x </button>
+                    <div class="popup__content">
+                        <form action="" class="form" id="form__add-card">
+                        <label for="form__title">Title</label>
+                        <input type="text" class="form__input" name="title" id="form__title">
+                        <label for="form__image">Image URL</label>
+                        <input type="text" class="form__input" name="image" id="form__image">
+                        <label for="form__description">Description</label>
+                        <input type="text" class="form__input" name="description" id="form__description">
+                        <br>
+                        <button type="submit" class="form__button">Save</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <template id="card-template">
+        <div class="card">
+            <div class="card__image-container">
+                <img class="card__image" src="" alt="">
+                <button class="card__like" type="button" aria-label="Me gusta">
+                    <svg class="card__like-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z"/>
+                    </svg>
+                </button>
+            </div>
+            <h2 class="card__title"></h2>
+            <p class="card__description"></p>
+        </div>
+    </template>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

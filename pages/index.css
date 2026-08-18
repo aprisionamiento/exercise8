@@ -1,0 +1,49 @@
+@import url(../vendor/normalize.css);
+@import url(../blocks/header.css);
+@import url(../blocks/nav.css);
+@import url(../vendor/fonts/fonts.css);
+@import url(../blocks/top.css);
+@import url(../blocks/main.css);
+@import url(../blocks/form.css);
+@import url(../blocks/popup.css);
+@import url(../blocks/card.css);
+@import url(../blocks/card-container.css);
+@import url(../blocks/story.css);
+
+.body {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    cursor: none !important;
+}
+
+html,
+body {
+    cursor: none;
+}
+
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 50px;
+    width: 80px;
+    height: 80px;
+
+    rotate: -45deg;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    pointer-events: none;
+
+    z-index: 99999;
+
+    transform: translate(-1px, -15px);
+}
