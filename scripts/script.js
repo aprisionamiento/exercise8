@@ -51,122 +51,122 @@ const formMemberInput = document.querySelectorAll('#form__add-card .form__input'
 const data = [
     {
         link: "./images/HeeJin1.jpg",
-        title: "HeeJin",
-        description: "HeeJin is a South Korean singer and member of the girl group ARTMS"  
+        title: "official_artms",
+        description: "ARTMS <Hyper-Ego> Concept Photo (Aura Ver.1) HeeJin 2026.08.07 1PM KST #ARTMS #아르테미스 #HeeJin #희진 #Hyper_Ego"  
     },
     {
         link: "./images/Ego1.jpg",
-        title: "Ego",
-        description: "Ego"
+        title: "official_artms",
+        description: "ARTMS <Hyper-Ego> 2026.08.07 1PM KST #ARTMS #아르테미스 #OURII #Hyper_Ego"
     },
     {
         link: "./images/KimLip1.jpg",
-        title: "Kim Lip",
-        description: "Kim Lip is a South Korean singer and member of the girl group ARTMS"
+        title: "official_artms",
+        description: "ARTMS <Hyper-Ego> Concept Photo (Aura Ver.1) Kim Lip 2026.08.07 1PM KST #ARTMS #아르테미스 #KimLip #김립 #Hyper_Ego"
     },
     {
         link: "./images/Jinsoul1.jpg",
-        title: "Jinsoul",
-        description: "Jinsoul is a South Korean singer and member of the girl group ARTMS"
+        title: "official_artms",
+        description: "ARTMS <Hyper-Ego> Concept Photo (Aura Ver.1) JinSoul 2026.08.07 1PM KST #ARTMS #아르테미스 #JinSoul #진솔 #Hyper_Ego"
     },
     {
         link: "./images/Hyper1.jpg",
-        title: "Hyper-Ego",
-        description: "ARTMS"
+        title: "official_artms",
+        description: "ARTMS <Hyper-Ego> 2026.08.07 1PM KST #ARTMS #아르테미스 #OURI #Hyper_Ego"
     },
     {
         link: "./images/Choerry1.jpg",
-        title: "Choerry",
-        description: "ARTMS <Hyper-Ego> Concept Photo (Trauma Ver.1) Choerry 2026.08.07 1PM KST #ARTMS #아르테미스 #OURII #Choerry #최리 #Hyper_Ego"
+        title: "official_artms",
+        description: "ARTMS <Hyper-Ego> Concept Photo (Aura Ver.1) Choerry 2026.08.07 1PM KST #ARTMS #아르테미스 #OURII #Choerry #최리 #Hyper_Ego"
     },
     {
         link: "./images/Aura1.jpg",
-        title: "",
-        description: "ARTMS <Hyper-Ego> Concept Photo (Aura Ver.) - Group 2026.08.07 1PM KST #ARTMS #아르테미스 #OURI #Hyper_Ego"
+        title: "official_artms",
+        description: "ARTMS <Hyper-Ego> Concept Photo (Aura Ver.1) - Group 2026.08.07 1PM KST #ARTMS #아르테미스 #OURI #Hyper_Ego"
     },
     {
         link: "./images/Aura2.jpg",
-        title: "",
-        description: "ARTMS <Hyper-Ego> Concept Photo (Aura Ver.) - Group 2026.08.07 1PM KST #ARTMS #아르테미스 #OURI #Hyper_Ego"
+        title: "official_artms",
+        description: "ARTMS <Hyper-Ego> Concept Photo (Aura Ver.1) - Group 2026.08.07 1PM KST #ARTMS #아르테미스 #OURI #Hyper_Ego"
     },
     {
         link: "./images/Aura3.jpg",
-        title: "",
-        description: "ARTMS <Hyper-Ego> Concept Photo (Aura Ver.) - Group 2026.08.07 1PM KST #ARTMS #아르테미스 #OURI #Hyper_Ego"
+        title: "official_artms",
+        description: "ARTMS <Hyper-Ego> Concept Photo (Aura Ver.1) - Group 2026.08.07 1PM KST #ARTMS #아르테미스 #OURI #Hyper_Ego"
     },
     {
         link: "./images/Aura4.jpg",
-        title: "",
-        description: "ARTMS <Hyper-Ego> Concept Photo (Aura Ver.) - Group 2026.08.07 1PM KST #ARTMS #아르테미스 #OURI #Hyper_Ego"
+        title: "official_artms",
+        description: "ARTMS <Hyper-Ego> Concept Photo (Aura Ver.1) - Group 2026.08.07 1PM KST #ARTMS #아르테미스 #OURI #Hyper_Ego"
     },
     {
         link: "./images/Aura5.jpg",
-        title: "",
-        description: "ARTMS <Hyper-Ego> Concept Photo (Aura Ver.) - Group 2026.08.07 1PM KST #ARTMS #아르테미스 #OURI #Hyper_Ego"
+        title: "official_artms",
+        description: "ARTMS <Hyper-Ego> Concept Photo (Aura Ver.1) - Group 2026.08.07 1PM KST #ARTMS #아르테미스 #OURI #Hyper_Ego"
     },
     {
         link: "./images/Aura6.jpg",
-        title: "",
-        description: "ARTMS <Hyper-Ego> Concept Photo (Aura Ver.) - Group 2026.08.07 1PM KST #ARTMS #아르테미스 #OURI #Hyper_Ego"
+        title: "official_artms",
+        description: "ARTMS <Hyper-Ego> Concept Photo (Aura Ver.1) - Group 2026.08.07 1PM KST #ARTMS #아르테미스 #OURI #Hyper_Ego"
     },
     {
         link: "./images/HeeJin2.jpg",
-        title: "HeeJin",
-        description: "HeeJin is a South Korean singer and member of the girl group ARTMS"  
+        title: "official_artms",
+        description: "ARTMS <Hyper-Ego> Concept Photo (Trauma Ver.1) HeeJin 2026.08.07 1PM KST #ARTMS #아르테미스 #HeeJin #희진 #Hyper_Ego"
     },
     {
         link: "./images/Ego2.jpg",
-        title: "Ego",
-        description: "Ego"
+        title: "official_artms",
+        description: "ARTMS <Hyper-Ego> 2026.08.07 1PM KST #ARTMS #아르테미스 #OURII #Ego #에고 #Hyper_Ego"
     },
     {
         link: "./images/KimLip2.jpg",
-        title: "Kim Lip",
-        description: "Kim Lip is a South Korean singer and member of the girl group ARTMS"
+        title: "official_artms",
+        description: "ARTMS <Hyper-Ego> Concept Photo (Trauma Ver.1) Kim Lip 2026.08.07 1PM KST #ARTMS #아르테미스 #OURII #Kim_Lip #김립 #Hyper_Ego"
     },
     {
         link: "./images/Jinsoul2.jpg",
-        title: "Jinsoul",
-        description: "Jinsoul is a South Korean singer and member of the girl group ARTMS"
+        title: "official_artms",
+        description: "ARTMS <Hyper-Ego> Concept Photo (Trauma Ver.1) Jinsoul 2026.08.07 1PM KST #ARTMS #아르테미스 #OURII #Jinsoul #진솔 #Hyper_Ego"
     },
     {
         link: "./images/Hyper2.jpg",
-        title: "Hyper-Ego",
-        description: "ARTMS"
+        title: "official_artms",
+        description: "ARTMS <Hyper-Ego> 2026.08.07 1PM KST #ARTMS #아르테미스 #OURII #Hyper_Ego #하이퍼 에고"
     },
     {
         link: "./images/Choerry2.jpg",
-        title: "Choerry",
+        title: "official_artms",
         description: "ARTMS <Hyper-Ego> Concept Photo (Trauma Ver.1) Choerry 2026.08.07 1PM KST #ARTMS #아르테미스 #OURII #Choerry #최리 #Hyper_Ego"
     },
     {
         link: "./images/Trauma1.jpg",
-        title: "",
+        title: "official_artms",
         description: "ARTMS <Hyper-Ego> Concept Photo (Trauma Ver.1) - Group 2026.08.07 1PM KST #ARTMS #아르테미스 #OURI #Hyper_Ego"
     },
     {
         link: "./images/Trauma2.jpg",
-        title: "",
+        title: "official_artms",
         description: "ARTMS <Hyper-Ego> Concept Photo (Trauma Ver.1) - Group 2026.08.07 1PM KST #ARTMS #아르테미스 #OURI #Hyper_Ego"
     },
     {
         link: "./images/Trauma3.jpg",
-        title: "",
+        title: "official_artms",
         description: "ARTMS <Hyper-Ego> Concept Photo (Trauma Ver.1) - Group 2026.08.07 1PM KST #ARTMS #아르테미스 #OURI #Hyper_Ego"
     },
     {
         link: "./images/Trauma4.jpg",
-        title: "",
+        title: "official_artms",
         description: "ARTMS <Hyper-Ego> Concept Photo (Trauma Ver.1) - Group 2026.08.07 1PM KST #ARTMS #아르테미스 #OURI #Hyper_Ego"
     },
     {
         link: "./images/Trauma5.jpg",
-        title: "",
+        title: "official_artms",
         description: "ARTMS <Hyper-Ego> Concept Photo (Trauma Ver.1) - Group 2026.08.07 1PM KST #ARTMS #아르테미스 #OURI #Hyper_Ego"
     },
     {
         link: "./images/Trauma6.jpg",
-        title: "",
+        title: "official_artms",
         description: "ARTMS <Hyper-Ego> Concept Photo (Trauma Ver.1) - Group 2026.08.07 1PM KST #ARTMS #아르테미스 #OURI #Hyper_Ego"
     }
 ]
