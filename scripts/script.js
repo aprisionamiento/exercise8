@@ -227,6 +227,27 @@ const createCard = (member, dataIndex) => {
     const cardImage = card.querySelector('.card__image');
     const cardDescription = card.querySelector('.card__description');
     const cardButton = card.querySelector('.card__like');
+    const cardDeleteButton = card.querySelector('.card__delete');
+    
+    cardDeleteButton.addEventListener('click', (event) => {
+    event.stopPropagation();
+
+    const confirmed = confirm('¿Quieres eliminar esta publicación?');
+
+    if (!confirmed) return;
+
+    const cardElement = event.currentTarget.closest('.card');
+
+    const dataIndex = Array.from(
+        container.querySelectorAll('.card')
+    ).indexOf(cardElement);
+
+    if (dataIndex !== -1) {
+        data.splice(dataIndex, 1);
+    }
+
+    cardElement.remove();
+});
 
     const imageSource = getImageSource(member);
 
