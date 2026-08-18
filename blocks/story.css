@@ -1,7 +1,3 @@
-/* =========================================
-   STORIES
-========================================= */
-
 .stories-container {
     display: flex;
     align-items: center;
@@ -9,11 +5,6 @@
 
     padding: 20px;
 }
-
-
-/* =========================================
-   STORY CIRCLE
-========================================= */
 
 .story-border {
     width: 120px;
@@ -63,11 +54,6 @@
 
     background: #fff;
 }
-
-
-/* =========================================
-   MODAL
-========================================= */
 
 .story-modal {
     position: fixed;
@@ -437,94 +423,58 @@
 
 }
 
+@media screen and (max-width: 600px) {
 
-/* =========================================
-   RESPONSIVE
-========================================= */
-
-@media (max-width: 600px) {
-
-    .story-content {
-        width: 100vw;
-        height: 100vh;
-
-        max-width: 100vw;
-        max-height: 100vh;
-
-        border-radius: 0;
+    .story-progress-container {
+        top: 8px;
+        left: 8px;
+        right: 8px;
     }
 
-    .story-content::before {
-    content: "";
-    position: absolute;
+    .story-header {
+        top: 22px;
+        left: 12px;
+        right: 12px;
+    }
 
-    top: 0;
-    left: 0;
-    right: 0;
+    .story-close {
+        width: 36px;
+        height: 36px;
+        font-size: 28px;
+    }
 
+    .story-volume {
+        top: 22px;
+        right: 58px;
 
-    height: 140px;
+        width: 36px;
+        height: 36px;
 
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.812) 0%,
-        rgba(0, 0, 0, 0.45) 35%,
-        rgba(0, 0, 0, 0.15) 65%,
-        transparent 10%
-    );
-
-    z-index: 10;
-
-    pointer-events: none;}
+        font-size: 16px;
+    }
 
     .story-navigation {
-        width: 35px;
+        width: 32px;
+        font-size: 42px;
+    }
 
-        font-size: 45px;
+    .story-prev {
+        left: 2px;
+    }
+
+    .story-next {
+        right: 2px;
     }
 
     .story-like {
-        bottom: 25px;
-        right: 15px;
+        width: 52px;
+        height: 52px;
+
+        right: 14px;
+        bottom: 22px;
     }
 
-}
-
-.story-volume {
-    position: absolute;
-    top: 25px;
-    right: 60px;
-
-    width: 38px;
-    height: 38px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: none;
-    border-radius: 50%;
-
-    background: rgba(0, 0, 0, 0.55);
-    color: white;
-
-    font-size: 18px;
-
-    cursor: pointer;
-
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-
-    transition:
-        background 0.2s ease,
-        transform 0.2s ease;
-}
-
-.story-volume:hover {
-    background: rgba(0, 0, 0, 0.75);
-    transform: scale(1.08);
-}
-
-.story-volume:active {
-    transform: scale(0.95);
+    .story-like span {
+        font-size: 31px;
+    }
 }

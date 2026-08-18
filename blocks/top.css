@@ -92,3 +92,83 @@
   cursor: pointer;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+@media screen and (max-width: 700px) {
+    .top {
+        padding: 15px 0;
+    }
+
+    .top__container {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 16px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "profile"
+            "info"
+            "actions";
+
+        justify-items: center;
+        gap: 18px;
+    }
+
+    .top__left {
+        grid-area: profile;
+    }
+
+    .top__middle {
+        grid-area: info;
+
+        width: 100%;
+        padding: 0;
+
+        align-items: center;
+        text-align: center;
+    }
+
+    .top__right {
+        grid-area: actions;
+
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .story-border {
+        width: 145px;
+        height: 145px;
+        padding: 4px;
+    }
+
+    .top__image {
+        width: 137px;
+        height: 137px;
+    }
+
+    .top__user-info {
+        width: 100%;
+        max-width: none;
+
+        align-items: center;
+    }
+
+    .top__user-name h1 {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    .top__user-description {
+        margin-top: 4px;
+        font-size: 14px;
+        color: #aaa;
+    }
+
+    .user-info__button {
+        min-height: 40px;
+        padding: 9px 18px;
+        font-size: 13px;
+    }
+}

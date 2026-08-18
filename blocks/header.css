@@ -35,21 +35,16 @@
 
 @media screen and (max-width: 600px) {
     .header {
-        height: 70px;
-        padding: 0 20px;
+        height: 64px;
+        padding: 0 16px;
     }
 
     .header__image {
-        height: 48px;
+        height: 44px;
     }
 
     .nav__login {
-        padding: 8px 12px;
+        padding: 8px 10px;
         font-size: 12px;
-    }
-
-    .nav__login::after {
-        left: 12px;
-        right: 12px;
     }
 }
