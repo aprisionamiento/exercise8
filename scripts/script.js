@@ -50,7 +50,7 @@ const formMemberInput = document.querySelectorAll('#form__add-card .form__input'
 
 const data = [
     {
-        link: "./images/HeeJin1.jpg",
+        link: "./images/Heejin1.jpg",
         title: "official_artms",
         description: "ARTMS <Hyper-Ego> Concept Photo (Aura Ver.1) HeeJin 2026.08.07 1PM KST #ARTMS #아르테미스 #HeeJin #희진 #Hyper_Ego"  
     },
@@ -110,7 +110,7 @@ const data = [
         description: "ARTMS <Hyper-Ego> Concept Photo (Aura Ver.1) - Group 2026.08.07 1PM KST #ARTMS #아르테미스 #OURI #Hyper_Ego"
     },
     {
-        link: "./images/HeeJin2.jpg",
+        link: "./images/Heejin2.jpg",
         title: "official_artms",
         description: "ARTMS <Hyper-Ego> Concept Photo (Trauma Ver.1) HeeJin 2026.08.07 1PM KST #ARTMS #아르테미스 #HeeJin #희진 #Hyper_Ego"
     },
