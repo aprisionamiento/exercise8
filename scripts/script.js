@@ -238,9 +238,7 @@ const createCard = (member, dataIndex) => {
 
     const cardElement = event.currentTarget.closest('.card');
 
-    const dataIndex = Array.from(
-        container.querySelectorAll('.card')
-    ).indexOf(cardElement);
+    const dataIndex = data.indexOf(member);
 
     if (dataIndex !== -1) {
         data.splice(dataIndex, 1);
@@ -270,7 +268,8 @@ const createCard = (member, dataIndex) => {
     });
 
     cardElement.addEventListener('click', () => {
-        openCardPopup(dataIndex);
+        const currentIndex = data.indexOf(member);
+        if (currentIndex !== -1) openCardPopup(currentIndex);
     });
 
     container.prepend(card);
@@ -281,20 +280,34 @@ data.forEach((member, index) => {
 });
 
 userInfoEdit.addEventListener("click", () => {
+    // Always restore the current profile values when opening the editor.
+    const currentUsername = topUserName.querySelector("h1")?.textContent.trim() || topUserName.textContent.trim();
+    const currentDescription = topUserDescription.textContent.trim();
+
+    formUsername.value = currentUsername;
+    formUserDescription.value = currentDescription;
     popupEdit.classList.add("popup__open");
 });
 
 formEdit.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    topUserName.textContent = formUsername.value;
-    topUserDescription.textContent = formUserDescription.value;
+    const username = formUsername.value.trim();
+    const description = formUserDescription.value.trim();
 
+    const usernameHeading = topUserName.querySelector("h1");
+    if (usernameHeading) usernameHeading.textContent = username;
+    else topUserName.textContent = username;
+
+    topUserDescription.textContent = description;
     popupEdit.classList.remove("popup__open");
 });
 
 userInfoAddCard.addEventListener("click", () => {
+    // A new post always starts with a completely empty form.
+    formAddCard.reset();
     popupAdd.classList.add("popup__open");
+    requestAnimationFrame(() => formAddCard.querySelector("input")?.focus());
 });
 
 popupCloseEdit.addEventListener("click", () => {
@@ -303,6 +316,7 @@ popupCloseEdit.addEventListener("click", () => {
 
 popupCloseAddCard.addEventListener("click", () => {
     popupAdd.classList.remove("popup__open");
+    formAddCard.reset();
 });
 
 
@@ -333,13 +347,15 @@ formAddCard.addEventListener("submit", (e) => {
         card[input.name] = input.value;
     });
 
+    // Do not create an empty post if the required fields are missing.
+    if (!card.title?.trim() || !card.image?.trim()) return;
+
     data.push(card);
     createCard(card, data.length - 1);
-    
-    popupAdd.classList.remove("popup__open");
 
-    console.log(data);
-    console.log(card);
+    // Clear immediately so reopening Crear post is always blank.
+    formAddCard.reset();
+    popupAdd.classList.remove("popup__open");
 });
 
 /* =========================================

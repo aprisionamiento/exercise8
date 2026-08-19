@@ -113,7 +113,11 @@
     <template id="card-template">
         <div class="card">
             <div class="card__image-container">
-                <button class="card__delete" type="button" aria-label="Eliminar publicación">×</button>
+                <button class="card__delete" type="button" aria-label="Eliminar publicación" title="Eliminar publicación">
+    <svg class="card__delete-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M9 3h6l1 2h4v2H4V5h4l1-2Zm-3 6h12l-.8 11.2A2 2 0 0 1 15.2 22H8.8a2 2 0 0 1-2-1.8L6 9Zm3 2v8h2v-8H9Zm4 0v8h2v-8h-2Z"/>
+    </svg>
+</button>
                 <img class="card__image" src="" alt="">
                 <button class="card__like" type="button" aria-label="Me gusta">
                     <svg class="card__like-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
