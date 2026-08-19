@@ -77,11 +77,6 @@
     display: flex;
 }
 
-
-/* =========================================
-   STORY CONTENT
-========================================= */
-
 .story-content {
     position: relative;
 
@@ -180,10 +175,6 @@
     transition: width 0.1s linear;
 }
 
-/* =========================================
-   INDIVIDUAL PROGRESS
-========================================= */
-
 .story-progress {
     position: relative;
 
@@ -197,9 +188,6 @@
 
     overflow: hidden;
 }
-
-
-/* WHITE PROGRESS */
 
 .story-progress-fill {
     width: 0%;
@@ -218,11 +206,6 @@
     width: 100%;
 }
 
-
-/* =========================================
-   HEADER
-========================================= */
-
 .story-header {
     position: absolute;
 
@@ -232,15 +215,12 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: flex-end;
+    gap: 10px;
     z-index: 30;
 
     pointer-events: none;
 }
-
-
-/* TITLE */
 
 .story-title {
     color: white;
@@ -251,11 +231,6 @@
     text-shadow:
         0 1px 4px rgba(0, 0, 0, 0.7);
 }
-
-
-/* =========================================
-   CLOSE
-========================================= */
 
 .story-close {
     pointer-events: auto;
@@ -288,10 +263,36 @@
     transform: scale(1.08);
 }
 
+.story-volume {
+    pointer-events: auto;
 
-/* =========================================
-   PREVIOUS / NEXT
-========================================= */
+    width: 38px;
+    height: 38px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    color: white;
+
+    font-size: 25px;
+
+    line-height: 25px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.story-volume:hover {
+    background: rgba(0, 0, 0, 0.65);
+
+    transform: scale(1.08);
+}
 
 .story-navigation {
     position: absolute;
@@ -398,11 +399,6 @@
     transform: scale(1.15);
 }
 
-
-/* =========================================
-   HEART ANIMATION
-========================================= */
-
 .story-like.heart-animation span {
     animation: heartPop 0.35s ease;
 }
@@ -444,12 +440,8 @@
     }
 
     .story-volume {
-        top: 22px;
-        right: 58px;
-
         width: 36px;
         height: 36px;
-
         font-size: 16px;
     }
 
